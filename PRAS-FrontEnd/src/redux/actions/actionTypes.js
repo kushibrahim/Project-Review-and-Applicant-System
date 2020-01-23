@@ -1,0 +1,34 @@
+//Projects successfully fetch from rest api.
+export const GET_PROJECTS_SUCCESS = "GET_PROJECTS_SUCCESS"
+
+export const ADD_PROJECT_SUCCESS = "ADD_PROJECT_SUCCESS"
+export const UPDATE_PROJECT_SUCCESS = "UPDATE_PROJECT_SUCCESS"
+export const DELETE_PROJECT_SUCCESS = "DELETE_PROJECT_SUCCESS"
+
+
+//Specialists successfully fetch from rest api.
+export const GET_SPECIALIST_SUCCESS = "GET_SPECIALIST_SUCCESS"
+
+export const ADD_SPECIALIST_SUCCESS = "ADD_SPECIALIST_SUCCESS"
+export const UPDATE_SPECIALIST_SUCCESS = "UPDATE_SPECIALIST_SUCCESS"
+export const DELETE_SPECIALIST_SUCCESS = "DELETE_SPECIALIST_SUCCESS"
+
+//Applicants successfully fetch from rest api.
+export const GET_APPLICANT_SUCCESS = "GET_APPLICANT_SUCCESS"
+
+export const ADD_APPLICANT_SUCCESS = "ADD_APPLICANT_SUCCESS"
+export const UPDATE_APPLICANT_SUCCESS = "UPDATE_APPLICANT_SUCCESS"
+export const DELETE_APPLICANT_SUCCESS = "DELETE_APPLICANT_SUCCESS"
+
+//Referees successfully fetch from rest api.
+export const GET_REFEREE_SUCCESS = "GET_REFEREE_SUCCESS"
+
+export const ADD_REFEREE_SUCCESS = "ADD_REFEREE_SUCCESS"
+export const UPDATE_REFEREE_SUCCESS = "UPDATE_REFEREE_SUCCESS"
+export const DELETE_REFEREE_SUCCESS = "DELETE_REFEREE_SUCCESS"
+
+//Referee Reviews successfully fetch from rest api.
+export const GET_REFEREEREVIEW_SUCCESS = "GET_REFEREEVIEW_SUCCES"
+
+//Specialist Reviews successfully fetch from rest api.
+export const GET_SPECIALISTREVIEW_SUCCESS = "GET_SPECIALISTVIEW_SUCCESS"

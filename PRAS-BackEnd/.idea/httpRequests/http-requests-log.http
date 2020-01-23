@@ -1,0 +1,20 @@
+GET http://localhost:8080/rest/specialists
+
+###
+
+GET http://localhost:8080/rest/specialists
+
+<> 2019-10-04T051857.200.json
+
+###
+
+DELETE http://localhost:8080/rest/specialistDelete
+
+<> 2019-10-04T051843.400.json
+
+###
+
+GET http://localhost:8080/rest/specialist/{id}
+
+###
+

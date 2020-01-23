@@ -1,0 +1,23 @@
+[
+  {
+    "refereeID": 1,
+    "refereeName": "Oktay",
+    "refereePassword": "KUS123",
+    "refereeMail": "oktay@tr.ibm.com",
+    "refereePhone": "+905305221422"
+  },
+  {
+    "refereeID": 2,
+    "refereeName": "Zerrin",
+    "refereePassword": "Sema123",
+    "refereeMail": "zerrin@tr.ibm.com",
+    "refereePhone": "+903626242042"
+  },
+  {
+    "refereeID": 4,
+    "refereeName": "Oktay",
+    "refereePassword": "KUS123",
+    "refereeMail": "oktay1@tr.ibm.com",
+    "refereePhone": "+905305221422"
+  }
+]
