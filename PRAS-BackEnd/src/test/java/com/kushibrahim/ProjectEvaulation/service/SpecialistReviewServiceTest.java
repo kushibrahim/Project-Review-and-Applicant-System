@@ -46,4 +46,20 @@ public class SpecialistReviewServiceTest {
         assertEquals(SPECIALIST_REVIEW_DECISION, response.getSpecialistReviewDecision());
         assertEquals(SPECIALIST_REVIEW_SUMMARY, response.getSpecialistReviewSummary());
     }
+
+    @Test
+    public void whenGetByIdReviewsSpecialistReview_thenReturnSpecialistReview(){
+        SpecialistReview specialistReview = new SpecialistReview();
+        specialistReview.setSpecialistReviewID(SPECIALIST_REVIEW);
+        specialistReview.setSpecialistReviewDateTime(SPECIALIST_REVIEW_DATETIME);
+        specialistReview.setSpecialistReviewDecision(SPECIALIST_REVIEW_DECISION);
+        specialistReview.setSpecialistReviewSummary(SPECIALIST_REVIEW_SUMMARY);
+
+        when(specialistReviewRepository.getReviewById(SPECIALIST_REVIEW)).thenReturn(specialistReview);
+
+        assertEquals(SPECIALIST_REVIEW, specialistReview.getSpecialistReviewID());
+        assertEquals(SPECIALIST_REVIEW_DATETIME, specialistReview.getSpecialistReviewDateTime());
+        assertEquals(SPECIALIST_REVIEW_DECISION, specialistReview.getSpecialistReviewDecision());
+        assertEquals(SPECIALIST_REVIEW_SUMMARY, specialistReview.getSpecialistReviewSummary());
+    }
 }

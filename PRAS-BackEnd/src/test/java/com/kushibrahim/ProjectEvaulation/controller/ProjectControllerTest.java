@@ -17,6 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 @WebMvcTest(value = ProjectController.class)
 public class ProjectControllerTest extends BaseControllerTest {
 
+    private static final int PROJECT_ID = 1;
     private List<Project> projects;
     private Project project;
 
@@ -31,6 +32,17 @@ public class ProjectControllerTest extends BaseControllerTest {
                 .andExpect(status().isOk());
 
         verify(projectService, times(1)).getAllProjects();
+        verifyNoMoreInteractions(projectService);
+    }
+
+    @Test
+    public void whenGetByIdProject_thenReturnProjectSuccess() throws Exception {
+        when(projectService.getById(PROJECT_ID)).thenReturn(project);
+        mockMvc.perform(get("/projects/project/{id}", PROJECT_ID))
+                .andDo(print())
+                .andExpect(status().isOk());
+
+        verify(projectService, times(1)).getById(PROJECT_ID);
         verifyNoMoreInteractions(projectService);
     }
 }

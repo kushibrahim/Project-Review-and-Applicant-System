@@ -19,12 +19,8 @@ public class ProjectController {
     private ISpecialistReviewService specialistReviewService;
 
     @Autowired
-    public ProjectController(IProjectService projectService,
-                             IProjectApplicantService projectApplicantService,
-                             ISpecialistReviewService specialistReviewService) {
+    public ProjectController(IProjectService projectService){
         this.projectService = projectService;
-        this.projectApplicantService = projectApplicantService;
-        this.specialistReviewService = specialistReviewService;
     }
 
     @GetMapping()

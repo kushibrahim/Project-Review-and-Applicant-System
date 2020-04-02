@@ -55,7 +55,7 @@ public class RefereeReviewServiceTest {
         refereeReview.setRefereeReviewDecision(REFEREE_REVIEW_DECISION);
         refereeReview.setRefereeReviewSummary(REFEREE_REVIEW_SUMMARY);
 
-        when(refereeReviewRepository.getAllReviews()).thenReturn(Collections.singletonList(refereeReview));
+        when(refereeReviewRepository.getById(REFEREE_REVIEW_ID)).thenReturn(refereeReview);
 
         assertEquals(REFEREE_REVIEW_ID, refereeReview.getRefereeReviewID());
         assertEquals(REFEREE_REVIEW_DATETIME, refereeReview.getRefereeReviewDateTime());
